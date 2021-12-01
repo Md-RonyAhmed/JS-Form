@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+
+<head>
+  <title>Form Validation</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="main" align="center">
+    <h1>Registration Form</h1><hr><br><br>
+    <form>
+      <table align="center">
+        <tr>
+          <td>First Name: </td>
+          <td>
+            <input type="text" id="fName" required>
+            <span id="fNameError" class="color"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>Last Name:</td>
+          <td>
+            <input type="text" id="lName" required>
+            <span id="lNameError" class="color"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>Email Address:</td>
+          <td>
+            <input type="email" id="emailadd" required>
+            <span id="emailaddError" class="color"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>Password:</td>
+          <td>
+            <input type="password" id="pass" required>
+            <input type="checkbox" id="visInv"> Show Password
+            <span id="passError" class="color"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>Confirm Password:</td>
+          <td>
+            <input type="password" id="confirmPass" required>
+            <span id="confirmPassError" class="color"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>Gender info:</td>
+          <td>
+            <input type="radio" name="gender" value="male" required> Male
+            <input type="radio" name="gender" value="female" required> Female
+            <span id="genderError" class="color"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>Division info:</td>
+          <td>
+            <select id="division" required>
+              <option>---Select your division---</option>
+              <option value="Dhaka">Dhaka</option>
+              <option value="Chottogram">Chottogram</option>
+              <option value="Rajshahi">Rajshahi</option>
+              <option value="Khulna">Khulna</option>
+              <option value="Rangpur">Rangpur</option>
+              <option value="Mymensingh">Mymensingh</option>
+              <option value="Sylhet"> Sylhet</option>
+              <option value="Barishal">Barishal</option>
+
+            </select>
+            <span id="divisionError" class="color"></span>
+          </td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td>
+            <input type="submit" name="btn" id="btn" value="Submit">
+
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+  <script src="jquery/jquery-3.5.1.js"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
